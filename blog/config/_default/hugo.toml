@@ -37,9 +37,9 @@ listDateFormat = '2 Jan 2006'
 breadcrumbs = true
 
 # Social icons
-#[[params.social]]
-#name = "instagram"
-#url = "https://www.instagram.com/eu.bariatricada/"
+[[params.social]]
+name = "instagram"
+url = "https://www.instagram.com/eu.bariatricada/"
 
 # Main menu pages
 [[params.menu]]
