@@ -61,7 +61,7 @@ Para mulheres com obesidade e síndrome dos ovários policísticos (SOP), a ciru
 
 A relação entre cirurgia bariátrica e saúde mental é complexa, mas a tendência geral é positiva: uma revisão sistemática publicada na *Cureus* aponta que a maioria dos pacientes apresenta melhora do estado psicológico após a cirurgia, embora cerca de 15% ainda desenvolvam algum grau de depressão no pós-operatório e mereçam acompanhamento próximo, segundo o [Cureus](https://pmc.ncbi.nlm.nih.gov/articles/PMC9249077/).
 
-## 12. Reconhecimento médico oficial e mais critérios de indicação
+## 12 e 13. Reconhecimento médico oficial e mais critérios de indicação
 
 Nos últimos anos, o Conselho Federal de Medicina (CFM) ampliou significativamente os critérios que permitem a indicação da cirurgia: pacientes com IMC acima de 35 kg/m² e comorbidades associadas — de diabetes e apneia do sono a depressão e infertilidade — já podem ser candidatos, com uma lista de comorbidades reconhecidas que cresceu de poucas condições para mais de 20, segundo o [Portal Médico do CFM](https://portal.cfm.org.br/noticias/cfm-detalha-lista-de-comorbidades-que-podem-levar-a-indicacao-da-cirurgia-bariatrica/).
 
