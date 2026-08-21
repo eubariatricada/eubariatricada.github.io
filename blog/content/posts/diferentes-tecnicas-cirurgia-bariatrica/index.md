@@ -13,7 +13,7 @@ showTags: true
 hideBackToTop: false
 ---
 
-![Comparação entre bypass gástrico e sleeve gástrico](hero.png#center)
+![Comparação entre bypass gástrico e sleeve gástrico](capa.png#center)
 
 As duas técnicas mais realizadas no mundo hoje são o bypass gástrico em Y de
 Roux e o sleeve gástrico (gastrectomia vertical). Elas resolvem o mesmo
