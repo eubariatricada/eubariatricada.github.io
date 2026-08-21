@@ -1,28 +1,41 @@
 ---
-name: mario-blog-publisher
+name: blog-post
 description: >-
-  Generate a new post for the eubariatricada.github.io Hugo blog using the
-  mario-blog-post-generator skill, land it in blog/content/posts/, and open a
-  pull request for it. Use whenever the user asks to "publish a new blog
-  post," "write and publish a post about X," "add a post to the blog," or
-  gives a topic and wants it to end up live on the site — not just drafted.
-  Always ask up front whether PR review is required or optional: if optional,
-  this skill merges the PR immediately after opening it, which pushes the
-  post live via the site's GitHub Pages deploy; if required, it opens the PR
-  and stops, leaving the merge to a human reviewer. Never assume which mode
-  the user wants.
+  Manage blog posts for the eubariatricada.github.io Hugo site. Current
+  action: `new` — generate a new post using the mario-blog-post-generator
+  skill, land it in blog/content/posts/, and open a pull request for it. Use
+  whenever the user asks to "publish a new blog post," "write and publish a
+  post about X," "add a post to the blog," or gives a topic and wants it to
+  end up live on the site — not just drafted. For the `new` action, always
+  ask up front whether PR review is required or optional: if optional, this
+  skill merges the PR immediately after opening it, which pushes the post
+  live via the site's GitHub Pages deploy; if required, it opens the PR and
+  stops, leaving the merge to a human reviewer. Never assume which mode the
+  user wants.
 compatibility: >-
   Requires git and the GitHub CLI (gh) with push access to
   eubariatricada/eubariatricada.github.io, run from a checkout of that repo.
-  Depends on the mario-blog-post-generator skill for drafting — this skill
-  does not draft content itself.
+  The `new` action depends on the mario-blog-post-generator skill for
+  drafting — this skill does not draft content itself.
 metadata:
   author: mario
   version: "1.0"
   category: content-creation
 ---
 
-# Blog Publisher
+# Blog Post
+
+Manages blog posts for eubariatricada.github.io end to end. Today this skill
+has one action, `new`; more (e.g. `edit`, `retire`) can be added later as
+their own sections without disturbing this one.
+
+## Actions
+
+| Action | When | Description |
+|---|---|---|
+| `new` (default) | User wants a new post drafted and published | See below. |
+
+## Action: `new`
 
 Turn an approved draft from `mario-blog-post-generator` into a live post on
 eubariatricada.github.io. Generate, land the files, open a PR, and — only
@@ -39,7 +52,7 @@ gate.
 - [ ] Phase 5: Merge (optional review) or stop and hand off (required review)
 ```
 
-## Phase 1 — Gather inputs
+### Phase 1 — Gather inputs
 
 Ask for whatever isn't already stated:
 
@@ -51,7 +64,7 @@ Ask for whatever isn't already stated:
 Phrase the question plainly, e.g.: "Once the PR is open, should I wait for
 someone to review it, or merge it right away so it publishes live?"
 
-## Phase 2 — Generate the post
+### Phase 2 — Generate the post
 
 Invoke `mario-blog-post-generator` (via the Skill tool) with the topic and
 sources from Phase 1. Let it run its own phases in full, including its own
@@ -63,7 +76,7 @@ If the user already has an approved draft in hand (they wrote it themselves,
 or generated it earlier in the conversation), skip straight to Phase 3 with
 that content instead of re-running the generator.
 
-## Phase 3 — Land the files + present the plan (GATE)
+### Phase 3 — Land the files + present the plan (GATE)
 
 Study the existing convention before writing anything — look at an existing
 post under `blog/content/posts/<slug>/` (e.g.
@@ -107,7 +120,7 @@ wrong slug, a missing tag, or frontmatter that doesn't match the theme's
 schema (a mismatch here has broken rendering site-wide before — see
 `db3e818`). Do not proceed to Phase 4 without explicit go-ahead.
 
-## Phase 4 — Branch, commit, open PR
+### Phase 4 — Branch, commit, open PR
 
 1. Confirm you're not on `main`; create/switch to `post/<slug>` off `main`.
 2. `git add` the new post directory only — never a broad `git add -A`.
@@ -118,11 +131,11 @@ schema (a mismatch here has broken rendering site-wide before — see
    - title: `Add post: <title>`
    - body: one or two sentences on what the post covers, plus a line noting
      it was generated via the mario-blog-post-generator and
-     mario-blog-publisher skills.
+     blog-post skills.
 
 Report the PR number and URL.
 
-## Phase 5 — Merge or hand off
+### Phase 5 — Merge or hand off
 
 This is where the Phase 1 answer matters:
 
