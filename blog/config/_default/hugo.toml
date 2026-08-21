@@ -1,0 +1,73 @@
+baseURL = 'https://eubariatricada.github.io/'
+languageCode = 'pt-br'
+title = 'eu.bariatricada'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+# googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "Cirurgia bariátrica e saúde pós-bariátrica, com pesquisa citada."
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+#homeIntroTitle = 'eu.bariatricada'
+#homeIntroContent = """
+#Pesquisa citada sobre cirurgia bariátrica e vida pós-bariátrica.
+#"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 10
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+#[[params.social]]
+#name = "instagram"
+#url = "https://www.instagram.com/eu.bariatricada/"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+#[[params.menu]]
+#name = "about"
+#url = "/about"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+[markup.goldmark.renderer]
+unsafe = true
+
+# Giscus comments
+#[params.giscus]
+#enable = false
+#repo = "user/repo"
+#repoid = "repoId"
+#category = "General"
+#categoryid = "categoryId"
+#mapping = "pathname"
+#theme = "preferred_color_scheme"
