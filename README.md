@@ -1,4 +1,4 @@
-# eu.bariatricada
+# bariatricada
 
 Blog sobre cirurgia bariátrica e saúde pós-bariátrica — posts gerados com
 pesquisa citada (sem afirmação factual/científica sem fonte confiável).
