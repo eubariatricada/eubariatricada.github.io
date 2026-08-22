@@ -1,6 +1,6 @@
-baseURL = 'https://blog.bariatricada.com.br/'
+baseURL = 'https://bariatricada.com.br/'
 languageCode = 'pt-br'
-title = 'Blog | Bariatricada'
+title = 'Bariatricada'
 theme = 'typo'
 
 [taxonomies]
