@@ -1,28 +1,19 @@
-baseURL = 'https://eubariatricada.github.io/'
+baseURL = 'https://blog.bariatricada.com.br/'
 languageCode = 'pt-br'
-title = 'eu.bariatricada'
+title = 'Blog | Bariatricada'
 theme = 'typo'
 
 [taxonomies]
 tag = 'tags'
 
-# Google analytics code
-# googleAnalytics = "G-xxxxxxxxx"
-
 [params]
 # Meta description
-description = "Cirurgia bariátrica e saúde pós-bariátrica, com pesquisa citada."
+description = "Conteúdo autêntico (e inclusivo) sobre bariatrica, feito sob medida por (e para) todos.
 
 # Appearance settings
 theme = 'auto'
 colorPalette = 'default'
 hideHeader = false
-
-# Intro on main page, content is markdown
-#homeIntroTitle = 'eu.bariatricada'
-#homeIntroContent = """
-#Pesquisa citada sobre cirurgia bariátrica e vida pós-bariátrica.
-#"""
 
 # Collection to display on home
 homeCollectionTitle = 'Posts'
@@ -42,7 +33,7 @@ home = "Home"
 # Social icons
 [[params.social]]
 name = "instagram"
-url = "https://www.instagram.com/eu.bariatricada/"
+url = "https://www.instagram.com/bariatricada3/"
 
 # Main menu pages
 [[params.menu]]
